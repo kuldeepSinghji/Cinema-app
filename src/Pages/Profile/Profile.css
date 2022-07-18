@@ -1,0 +1,63 @@
+.profileContainer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.mobImgBox{
+    display: none;
+}
+.imgBox{
+    /* border: 2px solid red; */
+    height: 80vh;
+    width: 40vw;
+}
+.imgBox img{
+    object-fit: cover;
+    height: 80%;
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+.aboutBox{
+    display: flex;
+    flex-direction: column;
+
+}
+.nameBox{
+    height: 60px;
+    width: 100%;
+    font-size: 35px;
+
+}
+/* .nameBox span{
+    border: 2px solid red;
+} */
+.nameBox label{
+    color: pink;
+    font-weight: 800;
+    font-size: 42px;
+    text-shadow: 0px 0px 5px black;
+}
+@media (max-width:850px){
+    .profileContainer{
+        flex-direction: column;
+    }
+    .imgBox{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutBox{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nameBox label{
+        font-size: 20px;
+    }
+    .aboutBox span{
+        font-size: 18px;
+    }
+}

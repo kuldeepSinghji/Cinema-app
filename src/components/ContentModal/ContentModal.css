@@ -1,0 +1,126 @@
+
+.ContentModal_landscape{
+    object-fit: contain;
+    border-radius: 10px;
+}
+.ContentModal_portrait{
+    display: none;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.btn{
+    background-color: blue !important;
+    color: white !important;
+    border-radius: 5px !important;
+    font-size: 20px !important;
+}
+
+.tagline{
+    padding-bottom: 10px;
+    align-self: center;
+}
+.ContentModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+.ContentModal::-webkit-scrollbar{
+    display: none;
+}
+.ContentModal_about{
+    padding: 10px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    justify-content: space-evenly;
+    font-weight: 300;
+}
+.ContentModal_title{
+    height: 12%;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContentModal_description{
+    display: flex;
+    height: 40%;
+    width: 90%;
+    overflow-y: scroll;
+    padding: 15px;
+    border-radius: 20px;
+    scrollbar-width: thin;
+    box-shadow: inset 0 0 5px #000;
+    text-align: justify;
+}
+.ContentModal_description::-webkit-scrollbar{
+    display: none;
+
+}
+@media (max-width:785px){
+    .ContentModal_description{
+        font-size: 10px;
+        width:100%
+    }
+    .btn{
+        background-color: blue !important;
+        color: white !important;
+        border-radius: 5px !important;
+        font-size: 10px !important;
+    }
+    .Content_portrait{
+        width:150px;
+        height:200px;
+        border-radius:5px;
+        border: 2px solid black;
+    }
+    .image{
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+}
+
+@media (min-width:835px){
+    .ContentModal_landscape{
+        display: none;
+    }
+    .ContentModal_portrait{
+        display: flex;
+        width: 38%;
+    }
+    .Content_portrait{
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    .ContentModal{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .ContentModal_about{
+        width: 58%;
+
+    }
+    .ContentModal_title{
+        font-size: 3.5vw;
+    }
+    .ContentModal_description{
+        font-size: 22px;
+    }
+    .image{
+        border: 2px solid black;
+        width: 200px;
+        height: 300px;
+        border-radius: 5px;
+        /* object-fit: contain; */
+    }
+}
